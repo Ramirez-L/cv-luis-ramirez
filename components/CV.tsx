@@ -2,31 +2,33 @@ import React from "react";
 
 const CV = () => {
   return (
-    <div className="text-black grid grid-cols-6 px-52 my-6">
-      <div className=" col-span-5 my-2">
+    <div className="text-black grid grid-cols-1 md:grid-cols-6 px-4 md:px-52 my-6">
+      <div className="col-span-full md:col-span-5 my-2">
         <p>
-          <b className="text-6xl font-bold">Hola,&nbsp;</b>{" "}
-          <i className="gradient-text font-bold text-6xl text-transparent">
+          <b className="text-4xl md:text-6xl font-bold">Hola,&nbsp;</b>{" "}
+          <i className="gradient-text font-bold text-4xl md:text-6xl text-transparent">
             Bienvenido
           </i>
         </p>
       </div>
-      <div className="col-span-5 my-1">
-        <h1 className="text-2xl">&nbsp;Mi nombre es Luis Ramírez</h1>
+      <div className="col-span-full md:col-span-5 my-1">
+        <h1 className="text-xl md:text-2xl">&nbsp;Mi nombre es Luis Ramírez</h1>
       </div>
-      <div className="col-span-5 my-1">
+      <div className="col-span-full md:col-span-5 my-1">
         <p>Data Engineer | Full Stack</p>
       </div>
-      <div className=" col-span-4">
-        <p className="text-slate-800 text-justify text-2xl">
+      <div className="col-span-full md:col-span-4">
+        <p className="text-slate-800 text-justify text-lg md:text-2xl">
           Creando funcionalidades y soluciones basadas en datos para una mejor
           experiencia en herramientas digitales. Cerrando la brecha entre las
           necesidades de los usuarios, las posibilidades tecnológicas y los
           objetivos del negocio.
         </p>
       </div>
-      <div className="grid grid-cols-subgrid col-span-6 gap-8 my-2 mt-10">
-        <div className=" col-span-3">
+
+      <div className="grid grid-cols-1 md:grid-cols-subgrid col-span-full md:col-span-6 gap-8 my-2 mt-10">
+        {/* Sección "Acerca de Mi" */}
+        <div className="col-span-full md:col-span-3">
           <div>
             <h2 className="font-bold">Acerca de Mi</h2>
           </div>
@@ -34,7 +36,7 @@ const CV = () => {
           <div>
             <p className="text-slate-700 text-justify">
               Luis Ramírez es inteligente, altamente educado, enfocado,
-              diligente, productivo, emprendedor, innovadora, amigable,
+              diligente, productivo, emprendedor, innovador, amigable,
               visionario, colaborador, de mente abierta, crítico, lógico,
               curioso, práctico.
             </p>
@@ -44,7 +46,7 @@ const CV = () => {
             <p className="text-slate-700 text-justify">
               Puedo crear soluciones basadas en la experiencia de usuario, en
               conjunto con los datos disponibles de la empresa o externos para
-              poder obtimizar los recursos disponibles. Incluyendo la
+              poder optimizar los recursos disponibles. Incluyendo la
               planificación a futuro de nuevas funcionalidades.
             </p>
           </div>
@@ -53,12 +55,13 @@ const CV = () => {
             <p className="text-slate-700 text-justify">
               Uno de mis puntos a favor es la basta experiencia en atención al
               cliente, donde la escucha activa permite la toma de decisiones
-              acertivas para comunicar soluciones, convirtiendo contenido
+              asertivas para comunicar soluciones, convirtiendo contenido
               técnico en lenguaje apto para distintas personas.
             </p>
           </div>
           <br />
-          <div className=" col-span-3">
+          <div className="col-span-full md:col-span-3">
+            {" "}
             <div>
               <h2 className="font-bold">Contacto</h2>
             </div>
@@ -69,7 +72,7 @@ const CV = () => {
             </div>
           </div>
         </div>
-        <div className=" col-span-3">
+        <div className="col-span-full md:col-span-3">
           <div>
             <div>
               <h2 className="font-bold">Mi enfoque del trabajo</h2>
@@ -89,8 +92,8 @@ const CV = () => {
             </div>
           </div>
           <br />
-          <div className="grid grid-cols-subgrid col-span-3 gap-1">
-            <div className=" col-span-3">
+          <div className="grid grid-cols-1 md:grid-cols-subgrid col-span-full md:col-span-3 gap-1">
+            <div className="col-span-full md:col-span-3">
               <div>
                 <h2 className="font-bold">Mis Roles</h2>
               </div>
@@ -119,7 +122,7 @@ const CV = () => {
               </div>
             </div>
             <br />
-            <div className=" col-span-3">
+            <div className="col-span-full md:col-span-3">
               <div>
                 <h2 className="font-bold">Educación</h2>
               </div>
